@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tauhid</title>
+  <link rel="stylesheet" href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" />
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+  <style>
+    .ion-activatable {
+      position: relative;
+      overflow: hidden;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <ion-app>
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Tauhid</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <div class="ion-activatable">
+        A plain div with a bounder ripple effect
+        <ion-repple-effect></ion-repple-effect>
+      </div>
+      <button class="ion-activatable">
+        A button with a bounded ripple effect
+        <ion-repple-effect></ion-repple-effect>
+      </button>
+    </ion-content>
+  </ion-app>
+</body>
+</html>
