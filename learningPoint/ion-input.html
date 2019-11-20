@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tauhid</title>
+  <link rel="stylesheet" href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" />
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+</head>
+<body>
+  <ion-app>
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Create Account</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <form onsubmit="processForm(event)">
+        <ion-list>
+          <ion-item>
+            <ion-label position="stacked">First Name:<ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required type="text"></ion-input>
+          </ion-item>
+          
+          <ion-item>
+              <ion-label position="stacked">Last Name:<ion-text color="danger">*</ion-text></ion-label>
+              <ion-input required type="text"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label position="stacked">Email:<ion-text color="danger">*</ion-text></ion-label>
+              <ion-input required type="text"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input required type="email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Notes</ion-label>
+            <ion-textarea></ion-textarea>
+          </ion-item>
+
+
+
+
+
+        </ion-list>
+
+      </form>
+      <!-- Default Input -->
+      <!-- input with value -->
+      <!-- input with placeholder -->
+      <!-- input with clear button when there is a value -->
+      <!-- number type input -->
+      <!-- Disabled input -->
+      <!-- Readonly input -->
+      <!-- Inputs with labels -->
+
+
+
+
+
+      
+    </ion-content>
+  </ion-app>
+  
+
+</body>
+</html>
