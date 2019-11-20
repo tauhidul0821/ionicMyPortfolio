@@ -2,6 +2,23 @@
 ```JS
 <ion-button expand="block">Block Button</ion-button>
 ```
+<ion-row>
+    <ion-col align-self-start> ← problem
+      ion-col [start]
+    </ion-col>
+    <ion-col align-self-center>
+      ion-col [center]
+    </ion-col>
+    <ion-col align-self-end>
+      ion-col [end]
+    </ion-col>
+    <ion-col>
+      ion-col
+      <br>#
+      <br>#
+    </ion-col>
+  </ion-row>
+
 
 
 |           Link          |           Link        |                  Link    |                   Link          |
