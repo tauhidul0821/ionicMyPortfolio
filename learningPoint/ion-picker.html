@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tauhid</title>
+  <link rel="stylesheet" href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" />
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+</head>
+<body>
+  <ion-app>
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Tauhid</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-picker-controller></ion-picker-controller>
+      <ion-button onclick="openPicker()">Open Single Column picker</ion-button>
+      <ion-button onclick="openPicker(2, 5, multiColumnOptions)" >open Multi column picker</ion-button>
+
+
+
+      
+    </ion-content>
+  </ion-app>
+  <script>
+    const pickerController = document.querySelector('ion-picker-controller');
+    const defaultColumnOptions = [
+      [
+        'Dog',
+        'Cat',
+        'Bird',
+        'Lizard',
+        'Chinchilla'
+      ]
+    ];
+    const multiColumnOptions=[
+      [
+        'Minified',
+        'Responsive',
+        'Full Stack',
+        'Mobile First',
+        'Serverless'
+      ],
+      [
+        'Tomato',
+        'Avocado',
+        'Onion',
+        'Potato',
+        'Artichoke',
+      ]
+    ]
+    async function openPicker(numColumns=1,numOptions=5,columnOptions=defaultColumnOptions){
+      const picker = await pickerController.create({
+        column:this.getColumns(numColumns,numOptions,columnOptions),
+        button:[
+          {
+            text:'Cancel',
+            role:'cancel'
+          },
+          {
+            text:'Confirm',
+            handler:(value)=>{
+              console.log(`Got Value ${value}`);
+            }
+          }
+        ]
+      });
+      await picker.present();      
+    }
+    function getColumns(numColumns,numOptions,columnOptions){
+      let columns=[];
+      for(let i=0;i<numColumns;i++){
+        columns.push({
+          name:`col-${i}`,
+          options:this.getColumnOptions(i,numOptions,columnOptions)
+        });
+      }
+      return columns;
+    }
+    function getColumnOptions(columnIndex,numOptions,columnOptions){
+      let options=[];
+      for(let i=0;i<numOptions;i++){
+        options.push(
+          {
+            text:columnOptions[columnIndex][i%numOptions],
+            value:i
+          }
+        );
+      }
+      return options;
+    }
+  </script>
+</body>
+</html>
