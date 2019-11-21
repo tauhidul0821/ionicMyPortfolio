@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tauhid</title>
+  <link rel="stylesheet" href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" />
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+</head>
+<body>
+  <ion-app>
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Tauhid</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-toast-controller></ion-toast-controller>
+      <ion-button>Pair<ion-icon slot="end" name="bluetooth"></ion-icon></ion-button>
+    </ion-content>
+  </ion-app>
+
+  <script>
+    const controller = document.querySelector('ion-toast-controller');
+    const button = document.querySelector('ion-button');
+
+    button.addEventListener('click',handleButton);
+
+    function handleButton(){
+      controller.create({
+        color:'dark',
+        duration:2000,
+        message:'Paired Successfull',
+        showCloseButton: true
+      }).then(toast =>{
+        toast.present();
+      });
+    }
+  </script>
+
+</body>
+</html>
