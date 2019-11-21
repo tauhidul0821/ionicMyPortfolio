@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tauhid</title>
+  <link rel="stylesheet" href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" />
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+</head>
+<body>
+  <ion-app>
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Tauhid</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-tabs>
+    
+        <ion-tab tab="tab-schedule">
+          <ion-nav></ion-nav>
+        </ion-tab>
+
+        <ion-tab tab="tab-speaker">
+          <ion-nav></ion-nav>
+        </ion-tab>
+
+        <ion-tab tab="tab-map" component="page-map">
+          <ion-nav></ion-nav>
+        </ion-tab>
+
+        <ion-tab tab="tab-about" component="page-about">
+          <ion-nav></ion-nav>
+        </ion-tab> 
+
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button tab="tab-schedule">
+            <ion-icon name="calendar"></ion-icon>
+            <ion-label>Schedule</ion-label>
+            <ion-badge>6</ion-badge>
+          </ion-tab-button>
+
+          <ion-tab-button tab="tab-speaker">
+            <ion-icon name="contacts"></ion-icon>
+            <ion-label>Speakers</ion-label>
+          </ion-tab-button>
+
+          <ion-tab-button tab="tab-map">
+            <ion-icon name="map"></ion-icon>
+            <ion-label>Map</ion-label>
+          </ion-tab-button>
+
+          <ion-tab-button tab="tab-about">
+            <ion-icon name="information-circle"></ion-icon>
+            <ion-label>About</ion-label>
+          </ion-tab-button>
+
+
+
+
+        </ion-tab-bar>
+
+
+
+
+      </ion-tabs>
+
+
+
+      
+    </ion-content>
+  </ion-app>
+  
+
+</body>
+</html>
