@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tauhid</title>
+  <link rel="stylesheet" href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" />
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+</head>
+<body>
+  <ion-app>
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Tauhid</ion-title>
+        <ion-popover-controller></ion-popover-controller>
+        <ion-button slot="end">Show</ion-button>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+       <p>The "Show" button will activate the <code>ion-popover</code></p>
+    </ion-content>
+  </ion-app>
+
+  <script>
+
+    const popoverController = document.querySelector('ion-popover-controller');
+    let currentPopover=null;
+
+    const button = document.querySelector('ion-button');
+    button.addEventListener('click',handleButtonClick)
+
+    async function handleButtonClick(ev){
+      popover = await popoverController.create({
+        component:'popover-example-page',
+        event:ev,
+        translucent:true
+      });
+      currentPopover = popover;
+      return popover.present();
+    }
+
+    function dismissPopover(){
+      if(currentPopover){
+        currentPopover.dismiss().then(()=>{currentPopover = null});
+      }
+    }
+
+    customElements.define('popover-example-page',class ModalContent extends HTMLElement{
+      connectedCallback(){
+        this.innerHTML = `
+          <ion-list>
+            <ion-list-header>Ionic</ion-list-header>
+            <ion-item button>Documentation</ion-item>
+            <ion-item button>Showcase</ion-item>
+            <ion-item button>GitHub Repo</ion-item>
+          </ion-list>
+          <ion-button expand="block" onclick="dismissPopover()">Close</ion-button>
+        `;
+      }
+    });
+  
+  </script>
+  
+
+</body>
+</html>
