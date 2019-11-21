@@ -2,7 +2,11 @@
 ```JS
 <ion-button expand="block">Block Button</ion-button>
 ```
-
+```HTML
+      <!-- Searchbar with a custom debounce --> 
+      <!-- ↓ here problem -->
+      <ion-searchbar debounce="500"></ion-searchbar>
+```
 
 |           Link          |           Link        |                  Link    |                   Link          |
 | ----------------------- | --------------------- | ------------------------ | ------------------------------- |
