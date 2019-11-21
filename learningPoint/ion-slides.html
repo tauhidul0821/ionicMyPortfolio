@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tauhid</title>
+  <link rel="stylesheet" href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" />
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+</head>
+<body>
+  <ion-app>
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Tauhid</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-slides>
+        <ion-slide>
+          <h1>Slide 1</h1>
+        </ion-slide>
+
+
+        <ion-slide>
+          <h1>Slide 2</h1>
+        </ion-slide>
+        
+
+
+        <ion-slide>
+          <h1>Slide 3</h1>
+        </ion-slide>
+      </ion-slides>
+
+
+    </ion-content>
+  </ion-app>
+
+  <script>
+    let slides = document.querySelector('ion-slides');
+    slides.options = {
+      initialSlide:1,
+      speed:400
+    }
+  
+  </script>
+  
+
+</body>
+</html>
