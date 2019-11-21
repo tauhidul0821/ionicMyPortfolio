@@ -18,3 +18,5 @@
 | radio | refresher | searchbar | reorder |
 | routing | segment | select | slides |
 | tabs | toast | toggle | toolbar |
+
+https://ionicframework.com/docs/api
