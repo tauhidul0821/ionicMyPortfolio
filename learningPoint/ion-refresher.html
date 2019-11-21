@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tauhid</title>
+  <link rel="stylesheet" href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" />
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+</head>
+<body>
+  <ion-app>
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Tauhid</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <!-- Default Refresher -->
+    <!-- <ion-content>
+      <ion-refresher slot="fixed">
+        <ion-refresher-content></ion-refresher-content>
+      </ion-refresher>
+    </ion-content> -->
+
+    <!-- Custom Refresher Properties -->
+    <!-- <ion-content>
+      <ion-refresher slot="fixed" pull-factor="0.5" pull-min="100" pull-max="200">
+        <ion-refresher-content></ion-refresher-content>
+      </ion-refresher>
+    </ion-content> -->
+
+    <!-- Custom Refresher Content -->
+    <ion-content>
+      <ion-refresher slot="fixed">
+        <ion-refresher-content
+          pulling-icon="arrow-dropdown"
+          pulling-text="pull to refresh"
+          refreshing-spinner="dots"
+          refreshing-text="Refreshing..."
+        >
+        </ion-refresher-content>
+      </ion-refresher>
+    </ion-content>
+  </ion-app>
+</body>
+</html>
