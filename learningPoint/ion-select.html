@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tauhid</title>
+  <link rel="stylesheet" href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" />
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+</head>
+<body>
+  <ion-app>
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Tauhid</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-list-header>Single Selection</ion-list-header>
+        <ion-item lines="full">
+          <ion-label>Gender</ion-label>
+          <ion-select placeholder="Select One">
+            <ion-select-option value="female">Female</ion-select-option>
+            <ion-select-option value="male">Male</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label>Hair Color</ion-label>
+          <ion-select value="brown" ok-text="Okay" cancel-text="Dismiss">
+            <ion-select-option value="brown">Brown</ion-select-option>
+            <ion-select-option value="blone">Blonde</ion-select-option>
+            <ion-select-option value="black">Black</ion-select-option>
+            <ion-select-option value="red">Red</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Toppings</ion-label>
+          <ion-select multiple="true" cancel-text="Nah" ok-text="Okay!">
+              <ion-select-option value="bacon">Bacon</ion-select-option>
+              <ion-select-option value="olives">Black Olives</ion-select-option>
+              <ion-select-option value="xcheese">Extra Cheese</ion-select-option>
+              <ion-select-option value="peppers">Green Peppers</ion-select-option>
+              <ion-select-option value="mushrooms">Mushrooms</ion-select-option>
+              <ion-select-option value="onions">Onions</ion-select-option>
+              <ion-select-option value="pepperoni">Pepperoni</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-app>
+</body>
+</html>
