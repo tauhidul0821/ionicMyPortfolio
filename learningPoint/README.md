@@ -175,3 +175,45 @@ Floating Action Button
 # typography
 1. ion-anchor
 2. ion-text
+
+
+
+
+
+
+|           Link          |           Link        |                  Link    |                   Link          |
+| ----------------------- | --------------------- | ------------------------ | ------------------------------- |
+| ion-action-sheet | ion-action-sheet-controller | ion-alert | ion-alert-controller |
+| ion-anchor | ion-app | ion-avatar | ion-back-button |
+| ion-backdrop | ion-badge | ion-button | ion-buttons |
+| ion-card | ion-card-content | ion-card-header | ion-card-subtitle |
+| ion-checkbox | ion-chip | ion-col | ion-content |
+| ion-datetime | ion-fab | ion-fab-button | ion-fab-list |
+| ion-footer | ion-grid | ion-header | ion-img |
+| ion-infinite-scroll | ion-infinite-scroll-content | ion-input | ion-item |
+| ion-item-divider | ion-item-group | ion-item-options | ion-item-option |
+| ion-item-sliding | ion-label | ion-list | ion-list-header |
+| ion-loading | ion-menu | ion-menu-button | ion-menu-controller |
+| ion-menu-toggle | ion-modal | ion-modal-controller | ion-nav |
+| ion-nav-link | ion-nav-pop | ion-nav-push | ion-nav-set-root |
+| ion-note | ion-picker | ion-picker-controller | ion-popover |
+| ion-popover-controller | ion-progress-bar | ion-radio | ion-radio-group |
+| ion-range | ion-refresher | ion-refresher-content | ion-reorder |
+| ion-reorder-group | ion-ripple-effect | ion-route | ion-router-redirect |
+| ion-router | ion-router-link | ion-router-outlet | ion-row |
+| ion-searchbar | ion-segment | ion-segment-button | ion-select |
+| ion-select-button | ion-select-option | ion-skeleton-text | ion-slide |
+| ion-slides | ion-spinner | ion-split-pane | ion-tab |
+
+ion-tab-bar
+ion-tab-button
+ion-tabs
+ion-text
+ion-textarea
+ion-thumbnail
+ion-title
+ion-toast
+ion-toast-controller
+ion-toggle
+ion-toolbar
+ion-virtual-scroll
