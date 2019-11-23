@@ -204,16 +204,6 @@ Floating Action Button
 | ion-searchbar | ion-segment | ion-segment-button | ion-select |
 | ion-select-button | ion-select-option | ion-skeleton-text | ion-slide |
 | ion-slides | ion-spinner | ion-split-pane | ion-tab |
-
-ion-tab-bar
-ion-tab-button
-ion-tabs
-ion-text
-ion-textarea
-ion-thumbnail
-ion-title
-ion-toast
-ion-toast-controller
-ion-toggle
-ion-toolbar
-ion-virtual-scroll
+| ion-tab-bar | ion-tab-button | ion-tabs | ion-text |
+| ion-textarea | ion-thumbnail | ion-title | ion-toast |
+| ion-toast-controller | ion-toggle | ion-toolbar | ion-virtual-scroll |
